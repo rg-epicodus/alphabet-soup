@@ -1,0 +1,13 @@
+.container {
+  background-color: #99ccff;
+  align-items: center;
+}
+
+img {
+  height: 140%;
+  width: 140%;
+}
+
+h1 {
+  text-align: center;
+}
