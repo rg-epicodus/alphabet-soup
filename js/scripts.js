@@ -1,11 +1,18 @@
-function Learner(name,age) {
+
+function Learner(name,age,language) {
   this.name = name;
   this.age = age;
+  this.language = language;
 }
 Learner.prototype.returnInfo = function() {
-  return (this.name + " " + this.age);
+  return (this.name + " " + this.age + " " + this.language);
 }
 
+function languageChoice () {
+  if (this.language === 'arabic') {
+    console.log("they chose arabic.")
+  }
+}
 
 
 
@@ -16,38 +23,14 @@ $(document).ready(function() {
 
   var age = parseInt($("input.enter-age").val());
 
-  var userInput = new Learner(name,age);
+  var language = $("#languageSelector").val();
+
+  var userInput = new Learner(name,age,language);
+  console.log(userInput);
   console.log(userInput.returnInfo());
   $("#dumpInput").append("<li>" + userInput.returnInfo() + "</li>");
 
+  languageChoice();
   });
 });
 
-
-//   $("#j-eem").click(function(playSound) {
-//
-//     var soundFile = 'audio/arabic/L_05.mp3';
-//     playSound(soundFile);
-//
-//     function playSound(audio) {
-//         var soundElement = '<audio style="display:none; width: 0px; height: 0px;" id="audioNotifier" src="' + audio + '" controls preload="auto" autobuffer></audio>';
-//         $('#audioContainer').html(soundElement);
-//         $('#audioNotifier')[0].play();
-//     }
-//
-//   });
-//
-//   $(this.image).click(function(playSound) {
-//
-//     var soundFile = 'audio/arabic/L_05.mp3';
-//     playSound(soundFile);
-//
-//     function playSound(audio) {
-//         var soundElement = '<audio style="display:none; width: 0px; height: 0px;" id="audioNotifier" src="' + audio + '" controls preload="auto" autobuffer></audio>';
-//         $('#audioContainer').html(soundElement);
-//         $('#audioNotifier')[0].play();
-//     }
-//
-//   });
-//
-// });

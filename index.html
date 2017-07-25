@@ -13,11 +13,13 @@
     <div class="container">
 
       <div class="row">
+
         <h1><b>Arabic Alphabet</b></h1>
       </div>
 
       <div class="row">
         <div class="col-letter">
+
           <img src="img/arabic/07-khaa.png" onClick="document.getElementById('07-khaa').play(); return false;" alt="kh-aa">
           <audio id="07-khaa">
             <source src="audio/arabic/07-khaa.mp3" type="audio/mpeg">
@@ -196,6 +198,7 @@
         </div>
       </div>
       </div>
+
       </div>
 
       <div id="english">
@@ -394,5 +397,28 @@
      <ul id="dumpInput">
      </ul>
    </div>
+
+      <div class="col-md-1" id="landingInput">
+        <form id="userInput">
+          <div class="form-group">
+            <label for="name">What is your name?</label>
+            <input type="text" class="form-control enter-name" required>
+          </div>
+          <div class="form-group userAge">
+            <label for="age">How old are you?</label>
+            <input type="text" class="form-control enter-age" required>
+          </div>
+          <div >
+            <select class="form-control" id="languageSelector">
+              <option value="arabic">Arabic</option>
+              <option value="english">English</option>
+              <option value="asl" disabled>ASL</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-info">Let's start learning!</button>
+        </form>
+      </div>
+  <body>
+
   </body>
 </html>
