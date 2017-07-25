@@ -8,13 +8,6 @@ Learner.prototype.returnInfo = function() {
   return (this.name + " " + this.age + " " + this.language);
 }
 
-function languageChoice () {
-  if (this.language === 'arabic') {
-    console.log("they chose arabic.")
-  }
-}
-
-
 
 $(document).ready(function() {
   $("form#userInput").submit(function(event) {
@@ -26,11 +19,14 @@ $(document).ready(function() {
   var language = $("#languageSelector").val();
 
   var userInput = new Learner(name,age,language);
-  console.log(userInput);
-  console.log(userInput.returnInfo());
   $("#dumpInput").append("<li>" + userInput.returnInfo() + "</li>");
 
-  languageChoice();
+  if (language === "arabic") {
+    $("#arabic").show();
+  } else if (language === "english") {
+    $("#english").show();
+  }
+
+
   });
 });
-
