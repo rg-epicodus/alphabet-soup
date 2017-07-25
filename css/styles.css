@@ -1,16 +1,38 @@
-.container {
+/*.container {
   background-color: #99ccff;
   align-items: center;
+}*/
+#arabic {
+  height: 100vh;
+    background-image: url('../img/arabic/blue-arabic-med.gif');
+}
+
+#english {
+  height: 100vh;
+    background-image: url('../img/english/green-english-sm.gif');
 }
 
 img {
-  height: 140%;
-  width: 140%;
+  height: 120%;
+  width: 120%;
 }
 
 h1 {
   text-align: center;
+  text-shadow: black;
+  font-size: 100px;
+  color: white;
+  padding: 40px;
 }
+
+.col-letter{
+    width:14.285%;
+    float:left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 
 /*#landingInput {
 }
@@ -18,3 +40,4 @@ h1 {
 #arabic {
   display: none;
 }*/
+

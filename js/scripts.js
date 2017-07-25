@@ -1,3 +1,4 @@
+
 function Learner(name,age,language) {
   this.name = name;
   this.age = age;
@@ -14,12 +15,14 @@ function languageChoice () {
 }
 
 
+
 $(document).ready(function() {
   $("form#userInput").submit(function(event) {
   event.preventDefault();
   var name = $("input.enter-name").val();
 
   var age = parseInt($("input.enter-age").val());
+
   var language = $("#languageSelector").val();
 
   var userInput = new Learner(name,age,language);
@@ -30,3 +33,4 @@ $(document).ready(function() {
   languageChoice();
   });
 });
+
