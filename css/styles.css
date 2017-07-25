@@ -1,13 +1,26 @@
-.container {
+/*.container {
   background-color: #99ccff;
   align-items: center;
+}*/
+body {
+  background-image: url('../img/arabic/blue-arabic-med.gif');
 }
 
 img {
-  height: 140%;
-  width: 140%;
+  height: 120%;
+  width: 120%;
 }
 
 h1 {
   text-align: center;
+  color: white;
 }
+
+.col-letter{
+    width:14.285%;
+    float:left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
