@@ -41,3 +41,10 @@ h1 {
 #english {
   display: none;
 }
+
+ul {
+  font-size: 56px;
+  color: #fff;
+  list-style-type: none;
+  text-align: center;
+}

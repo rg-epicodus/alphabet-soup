@@ -12,6 +12,7 @@ Learner.prototype.returnInfo = function() {
 $(document).ready(function() {
   $("form#userInput").submit(function(event) {
   event.preventDefault();
+  $("#landingInput").hide();
   var name = $("input.enter-name").val();
 
   var age = parseInt($("input.enter-age").val());
@@ -27,6 +28,11 @@ $(document).ready(function() {
     $("#english").show();
   }
 
+$("replay").click()function(event){
+  event.preventDefault();
+  //add function to reset page and start over
+  //add a button that swaps language
+}
 
   });
 });
