@@ -2,8 +2,14 @@
   background-color: #99ccff;
   align-items: center;
 }*/
-body {
-  background-image: url('../img/arabic/blue-arabic-med.gif');
+#arabic {
+  height: 100vh;
+    background-image: url('../img/arabic/blue-arabic-med.gif');
+}
+
+#english {
+  height: 100vh;
+    background-image: url('../img/english/green-english-sm.gif');
 }
 
 img {
@@ -13,7 +19,10 @@ img {
 
 h1 {
   text-align: center;
+  text-shadow: black;
+  font-size: 100px;
   color: white;
+  padding: 40px;
 }
 
 .col-letter{
@@ -24,3 +33,18 @@ h1 {
     padding-right: 15px;
     padding-left: 15px;
   }
+
+#arabic {
+  display: none;
+}
+
+#english {
+  display: none;
+}
+
+ul {
+  font-size: 56px;
+  color: #fff;
+  list-style-type: none;
+  text-align: center;
+}
