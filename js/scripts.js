@@ -8,6 +8,12 @@ Learner.prototype.returnInfo = function() {
   return (this.name + " " + this.age + " " + this.language);
 }
 
+function replay() {
+  $("#arabic").hide();
+  $("#english").hide();
+  $("#landingInput").show();
+  document.getElementById("userInput").reset();
+}
 
 $(document).ready(function() {
   $("form#userInput").submit(function(event) {
@@ -27,12 +33,6 @@ $(document).ready(function() {
   } else if (language === "english") {
     $("#english").show();
   }
-
-$("replay").click()function(event){
-  event.preventDefault();
-  //add function to reset page and start over
-  //add a button that swaps language
-}
 
   });
 });
