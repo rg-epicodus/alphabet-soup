@@ -28,10 +28,10 @@ $(document).ready(function() {
     $("#english").show();
   }
 
-// $("replay").click()function(event){
-//   event.preventDefault();
-  //add function to reset page and start over
-  //add a button that swaps language
+$("replay").click()function(event){
+  event.preventDefault();
+  // add function to reset page and start over
+  // add a button that swaps language
 }
 
   });
