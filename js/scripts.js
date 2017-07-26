@@ -5,13 +5,14 @@ function Learner(name,age,language) {
   this.language = language;
 }
 Learner.prototype.returnInfo = function() {
-  return (this.name + " " + this.age + " " + this.language);
+  return ("Hello " + this.name + "! Click each letter to hear the " + this.language + " pronnunciation.");
 }
 
 
 $(document).ready(function() {
   $("form#userInput").submit(function(event) {
   event.preventDefault();
+  $("#landingTitle").hide();
   $("#landingInput").hide();
   var name = $("input.enter-name").val();
 
@@ -26,13 +27,15 @@ $(document).ready(function() {
     $("#arabic").show();
   } else if (language === "english") {
     $("#english").show();
+  } else {
+    $("#ASL").show();
   }
 
-$("replay").click()function(event){
-  event.preventDefault();
-  // add function to reset page and start over
-  // add a button that swaps language
-}
+// $("replay").click()function(event){
+//   event.preventDefault();
+//   // add function to reset page and start over
+//   // add a button that swaps language
+// }
 
   });
 });

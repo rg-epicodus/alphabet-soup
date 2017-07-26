@@ -198,6 +198,7 @@
 
       <ul id="dumpInput">
       </ul>
+
         <div class="main">
         <div class="button-row">
           <div><a title="Another Language"></a></div>
@@ -209,7 +210,7 @@
     </div>
     </div>
 
-    <!-- <div id="english">
+    <div id="english">
     <div class="container">
 
       <div class="row">
@@ -386,11 +387,13 @@
           <div class="col-letter">
           </div>
         </div>
-        <ul id="dumpInput">
-        </ul>
+
       </div>
+
       <ul id="dumpInput">
+      
       </ul>
+
         <div class="main">
         <div class="button-row">
           <div><a title="Another Language"></a></div>
@@ -401,10 +404,10 @@
 
 
     </div>
-    </div> -->
+    </div>
 
 
-    <!-- <div id="ASL">
+    <div id="ASL">
     <div class="container">
 
         <div class="row">
@@ -528,8 +531,7 @@
           <div class="col-letter">
           </div>
         </div>
-        <ul id="dumpInput">
-        </ul>
+
           <div class="main">
           <div class="button-row">
             <div><a title="Another Language"></a></div>
@@ -537,12 +539,16 @@
           </div>
           </div>
 
-
-
     </div>
-    </div> -->
+    </div>
 
       <div class="container">
+      <div id="landingTitle">
+        <div class="row">
+        <img src="img/alphabet-soup-title.png">
+      </div>
+    </div>
+      <div class="row">
       <div id="landingInput">
       <div class="row">
         <form id="userInput">
@@ -555,16 +561,18 @@
             <input type="text" class="form-control enter-age" required>
           </div>
           <div >
+            <label for="language">Which alphabet do you want to learn?</label>
             <select class="form-control" id="languageSelector">
               <option value="arabic">Arabic</option>
               <option value="english">English</option>
-              <option value="asl" disabled>ASL</option>
+              <option value="asl">ASL</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-info">Let's start learning!</button>
+          <button type="submit" class="btn btn-default">Let's start learning!</button>
         </form>
       </div>
       </div>
+    </div>
     </div>
   </body>
 </html>

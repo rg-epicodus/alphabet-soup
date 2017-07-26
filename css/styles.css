@@ -3,20 +3,33 @@
   align-items: center;
 }*/
 #arabic {
-  height: 100vh;
+  display: none;
+  height: 150vh;
     background-image: url('../img/arabic/blue-arabic-med.gif');
 }
 
 #english {
-  height: 100vh;
+  display: none;
+  height: 150vh;
     background-image: url('../img/english/green-english-sm.gif');
 }
 
 #ASL {
-  height: 100vh;
+  display: none;
+  height: 150vh;
     background-image: url('../img/ASL/red-ASL-reg.gif');
 }
 
+#dumpInput {
+  margin: 75px;
+  padding: 20px;
+  background-image: url('../img/transluscent-bg.png');
+  border-top-right-radius: 0px;
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 60px;
+
+}
 
 img {
   height: 120%;
@@ -40,27 +53,28 @@ h1 {
     padding-left: 15px;
   }
 
-/*#arabic {
-  display: none;
-}
-
-#english {
-  display: none;
-}*/
-
 ul {
-  font-size: 56px;
+  font-size: 40px;
   color: #fff;
   list-style-type: none;
   text-align: center;
 }
 
+#landingTitle {
+  padding-left: 10px;
+  padding-right: 75px;
+  padding-top: 22px;
+  width: 400px;
+  display: block;
+  margin: auto;
+}
+
 #landingInput {
   color: white;
-  background: -webkit-radial-gradient(#61a38a, #113163); /* Safari 5.1 to 6.0 */
-  background: -o-radial-gradient(#61a38a, #113163); /* For Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(#61a38a, #113163); /* For Firefox 3.6 to 15 */
-  background: radial-gradient(#61a38a, #113163); /* Standard syntax*/
+  background: -webkit-linear-gradient(#5276a8, #ba5e5e); /* Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#5276a8, #ba5e5e); /* For Opera 11.6 to 12.0 */
+  background: -moz-linear-gradient(#5276a8, #ba5e5e); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#5276a8, #ba5e5e); /* Standard syntax*/
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 22px;
@@ -76,6 +90,16 @@ ul {
   border-bottom-right-radius: 60px;
 }
 
+button {
+  border: 2px solid #003333 !important;
+  color: white !important;
+  background-color: #368771 !important;
+  margin-top: 40px !important;
+  border-top-right-radius: 0px !important;
+  border-top-left-radius: 20px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 20px !important;
+}
 /* my fancy button */
 .button-row {
   display: -webkit-inline-box;
@@ -123,7 +147,7 @@ ul {
   width: 180px;
   height: 50px;
   position: absolute;
-  border: 5px solid black;
+  border: 5px solid #113163;
   box-sizing: border-box;
   content: attr(title);
   display: -webkit-box;
@@ -135,7 +159,7 @@ ul {
   display: flex;
 }
 .button-row > div > a::before {
-  background-color: #113163;
+  background-color: #167cdd;
   color: #fff;
   -webkit-transform: rotateY(0deg) translateZ(25px);
   -moz-transform: rotateY(0deg) translateZ(25px);
@@ -145,8 +169,8 @@ ul {
 }
 .button-row > div > a::after {
   background-color: #fff;
-  border-color: #000;
-  color: #000;
+  border-color: #113163;
+  color: #113163;
   -webkit-transform: rotateX(90deg) translateZ(25px);
   -moz-transform: rotateX(90deg) translateZ(25px);
   -ms-transform: rotateX(90deg) translateZ(25px);
