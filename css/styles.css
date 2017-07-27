@@ -5,13 +5,13 @@
 #arabic {
   display: none;
   height: 150vh;
-    background-image: url('../img/arabic/blue-arabic-med.gif');
+    background-image: url('../img/Arabic/blue-arabic-med.gif');
 }
 
 #english {
   display: none;
   height: 150vh;
-    background-image: url('../img/english/green-english-sm.gif');
+    background-image: url('../img/English/green-english-sm.gif');
 }
 
 #ASL {
