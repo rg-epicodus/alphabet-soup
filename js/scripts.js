@@ -9,6 +9,8 @@ Learner.prototype.returnInfo = function() {
 }
 
 
+
+
 $(document).ready(function() {
   $("form#userInput").submit(function(event) {
   event.preventDefault();
@@ -32,24 +34,34 @@ $(document).ready(function() {
     $("#ASL").show();
   }
 
-  $(".button-row").click(function() {
+  $(".mainPage").click(function() {
+    document.getElementById("userInput").reset();
     $("#landingTitle").show();
     $("#landingInput").show();
     $("#hide-languages").hide();
-    $("#hide-language").empty();
-    reload();
+    $("#hide-languages").empty();
   })
 
-$("form#userInput").click(function() {
-    location.reload();
-});
-// document.forms["#userInput"].reset();
+  $(".languageSwap").click(function() {
+    document.getElementById("userInput").reset();
+    $("#landingTitle").show();
+    $("#landingInput").show();
+    $("#hide-languages").hide();
+    $("#hide-languages").empty();
+  })
 
-// $("replay").click()function(event){
-//   event.preventDefault();
-//   // add function to reset page and start over
-//   // add a button that swaps language
+// Button to change languages currently only changes once -rg
+// function languageSwap() {
+//   var language = $("#languageSelector").val();
+//   if (language === "arabic") {
+//     $("#arabic").hide();
+//     $("#english").show();
+//   } else if (language === "english") {
+//     $("#english").hide();
+//     $("#arabic").show();
+//   }
 // }
+
 
   });
 });
