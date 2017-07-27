@@ -19,11 +19,11 @@ _App will have age appropriate material_
 
 |  Behavior: 	         |  click Example: 	| Output Example:	                            |
 |----------------------|-----------------	|---------------------------------------------|
-|  user clicks letter  |   sound plays    | window pops up with phoeneticalsounds like	|   	
+|  user clicks letter  |   sound plays    | click letter, sound plays     	|   	
 
 ## View on GitHub Pages
 
-[Alphabet soup App](put app link here)
+[Alphabet soup App](https://rg-epicodus.github.io/alphabet-soup/)
 
 ## Technologies Used
 
