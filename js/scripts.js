@@ -21,7 +21,8 @@ $(document).ready(function() {
   var language = $("#languageSelector").val();
 
   var userInput = new Learner(name,age,language);
-  $("#dumpInput").append("<li>" + userInput.returnInfo() + "</li>");
+  $(".dumpInput").append("<li>" + userInput.returnInfo() + "</li>");
+  // $("#dumpInput2").append("<li>" + userInput.returnInfo() + "</li>");
 
   if (language === "arabic") {
     $("#arabic").show();
@@ -30,6 +31,19 @@ $(document).ready(function() {
   } else {
     $("#ASL").show();
   }
+
+  $(".button-row").click(function() {
+    $("#landingTitle").show();
+    $("#landingInput").show();
+    $("#hide-languages").hide();
+    $("#hide-language").empty();
+    reload();
+  })
+
+$("form#userInput").click(function() {
+    location.reload();
+});
+// document.forms["#userInput"].reset();
 
 // $("replay").click()function(event){
 //   event.preventDefault();

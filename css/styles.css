@@ -20,7 +20,7 @@
     background-image: url('../img/ASL/red-ASL-reg.gif');
 }
 
-#dumpInput {
+.dumpInput {
   margin: 75px;
   padding: 20px;
   background-image: url('../img/transluscent-bg.png');
@@ -30,6 +30,17 @@
   border-bottom-right-radius: 60px;
 
 }
+
+/*#dumpInput2 {
+  margin: 75px;
+  padding: 20px;
+  background-image: url('../img/transluscent-bg.png');
+  border-top-right-radius: 0px;
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 60px;
+
+}*/
 
 img {
   height: 120%;
