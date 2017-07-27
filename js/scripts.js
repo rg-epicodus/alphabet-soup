@@ -40,17 +40,20 @@ $(document).ready(function() {
     $("#landingInput").show();
     $("#hide-languages").hide();
     $("#hide-languages").empty();
+    location.reload();
   })
 
-  $(".languageSwap").click(function() {
-    document.getElementById("userInput").reset();
-    $("#landingTitle").show();
-    $("#landingInput").show();
-    $("#hide-languages").hide();
-    $("#hide-languages").empty();
-  })
-  
+  // $(".languageSwap").click(function() {
+  //   document.getElementById("userInput").reset();
+  //   $("#landingTitle").show();
+  //   $("#landingInput").show();
+  //   $("#hide-languages").hide();
+  //   $("#hide-languages").empty();
+  // })
 
+  // $('#userInput').click(function() {
+  //     location.reload();
+  // });
 // Button to change languages currently only changes once -rg
 // function languageSwap() {
 //   var language = $("#languageSelector").val();
