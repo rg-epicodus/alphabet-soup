@@ -8,6 +8,26 @@ Learner.prototype.returnInfo = function() {
   return ("Hello " + this.name + "! Click each letter to hear the " + this.language + " pronunciation.");
 }
 
+// Button that starts whole thing over -rg
+function replay() {
+  $("#arabic").hide();
+  $("#english").hide();
+  $("#landingInput").show();
+  document.getElementById("userInput").reset();
+}
+
+
+// Button to change languages currently only changes once -rg
+function languageSwap() {
+  var language = $("#languageSelector").val();
+  if (language === "arabic") {
+    $("#arabic").hide();
+    $("#english").show();
+  } else if (language === "english") {
+    $("#english").hide();
+    $("#arabic").show();
+  }
+}
 
 
 $(document).ready(function() {
@@ -32,6 +52,7 @@ $(document).ready(function() {
   } else {
     $("#ASL").show();
   }
+
 
   $(".mainPage").click(function() {
     document.getElementById("userInput").reset();
@@ -86,7 +107,6 @@ $(document).ready(function() {
 //     $("#arabic").show();
 //   }
 // }
-
 
   });
 });
