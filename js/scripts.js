@@ -5,7 +5,7 @@ function Learner(name,age,language) {
   this.language = language;
 }
 Learner.prototype.returnInfo = function() {
-  return ("Hello " + this.name + "! Click each letter to hear the " + this.language + " pronnunciation.");
+  return ("Hello " + this.name + "! Click each letter to hear the " + this.language + " pronunciation.");
 }
 
 // Button that starts whole thing over -rg
@@ -28,7 +28,6 @@ function languageSwap() {
     $("#arabic").show();
   }
 }
-
 
 
 $(document).ready(function() {
@@ -63,6 +62,28 @@ $(document).ready(function() {
     $("#hide-languages").empty();
     location.reload();
   })
+
+  $(".tryEnglish").click(function() {
+    $("#arabic").hide();
+    $("#ASL").hide();
+    $("#english").show();
+  })
+
+  $(".tryArabic").click(function() {
+    $("#english").hide();
+    $("#ASL").hide();
+    $("#arabic").show();
+  })
+
+  $(".tryASL").click(function() {
+    $("#english").hide();
+    $("#arabic").hide();
+    $("#ASL").show();
+  })
+
+  // $(".languageSwap").click(function() {
+  //   alert
+  // }
 
   // $(".languageSwap").click(function() {
   //   document.getElementById("userInput").reset();
