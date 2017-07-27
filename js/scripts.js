@@ -49,6 +49,7 @@ $(document).ready(function() {
     $("#hide-languages").hide();
     $("#hide-languages").empty();
   })
+  
 
 // Button to change languages currently only changes once -rg
 // function languageSwap() {
